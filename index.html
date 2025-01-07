@@ -135,7 +135,7 @@
     class="d-flex flex-column justify-content-center align-items-center"
   >
     <div class="hero-container" data-aos="fade-in">
-      <h1>DreamEvents</h1>
+      <h1>Dream Events</h1>
       <p>
         Event Management Dashboard for
         <span
@@ -156,22 +156,22 @@
         <div class="container">
           <div class="section-title ">
             <h2>Introduction</h2>
-            <p>Welcome to DreamEvents, your ultimate event management solution</p>
+            <p>Welcome to Dream Events, your ultimate event management solution</p>
           </div>
       
           <div class="product-details">
             <!-- Product Name -->
-            <div class="row">
-              <div class="col-lg-3">
+            <div class="">
+              <div class="d-flex col-12   gap-4">
                 <h3>Product Name:</h3>
-                <p><strong>DreamEvents</strong></p>
+                <h3><strong>Dream Events</strong></h3>
               </div>
       
               <!-- Overview -->
               <div class="col-lg-9">
-                <h3>Overview:</h3>
+                <h3 class="mb-2">Overview:</h3>
                 <p>
-                  DreamEvents is a full-stack event management platform designed to simplify event organizing. The dashboard gives event organizers the tools to manage users, events, bookings, transactions, and analytics, while the mobile app allows attendees to easily explore and book events. DreamEvents optimizes the entire event lifecycle from planning to execution.
+                  Dream Events is a full-stack event management platform designed to simplify event organizing. The dashboard gives event organizers the tools to manage users, events, bookings, transactions, and analytics, while the mobile app allows attendees to easily explore and book events. Dream Events optimizes the entire event lifecycle from planning to execution.
                 </p>
               </div>
             </div>
@@ -226,7 +226,7 @@
             <div class="demo-link">
               <h3>Explore the Demo:</h3>
               <p>
-                Get a glimpse of DreamEvents in action by checking out the live demo of the admin dashboard and mobile app.
+                Get a glimpse of Dream Events in action by checking out the live demo of the admin dashboard and mobile app.
               </p>
               <p>
                 Demo (Admin Dashboard): <a href="https://ambitious-river-0c8253f10.4.azurestaticapps.net/" target="_blank">View Demo</a>
@@ -300,7 +300,7 @@
                 </ul>
           
                 <h3>Customizability</h3>
-                <p>The DreamEvents app is designed to be highly customizable to suit your specific needs:</p>
+                <p>The Dream Events app is designed to be highly customizable to suit your specific needs:</p>
                 <ul>
                   <li>Customize the **color scheme** and **branding** for both the dashboard and mobile app (e.g., logo, brand colors).</li>
                   <li>Toggle or hide certain sections such as charts, activity logs, or notifications based on your preferences.</li>
@@ -321,7 +321,7 @@
     <div class="getting-started-content">
       <!-- Installation Requirements -->
       <h3>Installation Requirements</h3>
-      <p>Before you can install and run the DreamEvents dashboard, ensure that your system meets the following requirements:</p>
+      <p>Before you can install and run the Dream Events dashboard, ensure that your system meets the following requirements:</p>
       <ul>
         <li><strong>Node.js</strong> (v20 or higher)</li>
         <li><strong>npm</strong> (for managing frontend and backend dependencies)</li>
@@ -331,7 +331,7 @@
 
       <!-- Installation Guide -->
       <h3>Installation Guide</h3>
-      <p>Follow the steps below to install and run the DreamEvents dashboard for both frontend and backend using the provided zip folders:</p>
+      <p>Follow the steps below to install and run the Dream Events dashboard for both frontend and backend using the provided zip folders:</p>
 
       <!-- Frontend Installation -->
       <h4>Frontend (client) Installation</h4>
@@ -381,7 +381,7 @@ PORT=5000
 
       <!-- Frontend Running -->
       <h4>Frontend (client)</h4>
-      <p>To run the frontend part of the DreamEvents dashboard, use the following command:</p>
+      <p>To run the frontend part of the Dream Events dashboard, use the following command:</p>
       <pre><code>npm start</code></pre>
       <p>This will start the frontend development server at <strong>http://localhost:3000</strong>.</p>
 
@@ -395,7 +395,7 @@ PORT=5000
       <h4>Accessing the Dashboard</h4>
       <p>Once both frontend and backend are running, open your browser and go to:</p>
       <pre><code>http://localhost:3000</code></pre>
-      <p>Log in using your credentials to start managing your events, users, bookings, and more with DreamEvents!</p>
+      <p>Log in using your credentials to start managing your events, users, bookings, and more with Dream Events!</p>
     </div>
   </div>
 </section>
@@ -514,7 +514,7 @@ PORT=5000
       </ul>
 
       <h3>2. Forms and Inputs</h3>
-      <p>Forms are essential for interacting with the DreamEvents dashboard and collecting event data. Below are some common forms and inputs:</p>
+      <p>Forms are essential for interacting with the Dream Events dashboard and collecting event data. Below are some common forms and inputs:</p>
       <ul>
         <li>Event Forms: Customize forms for creating, modifying, or canceling events.</li>
         <li>Booking Forms: Add forms to manage attendee bookings, ticket types, and event reservations.</li>
@@ -537,7 +537,7 @@ PORT=5000
       </ul>
 
       <h3>5. Customizable Themes and Layouts</h3>
-      <p>The DreamEvents template comes with a flexible theme that can be easily customized. You can adjust the theme colors, fonts, and layout settings through SCSS variables.</p>
+      <p>The Dream Events template comes with a flexible theme that can be easily customized. You can adjust the theme colors, fonts, and layout settings through SCSS variables.</p>
       <ul>
         <li>Color Scheme: Modify primary, secondary, and background colors to fit your brand or event theme.</li>
         <li>Typography: Adjust font-family and font-size properties for different sections to match the event's style.</li>
@@ -882,44 +882,45 @@ PORT=5000
     
       
     <!-- ======= Customization Guide    ======= -->
-    <section id="customization-guide">
-      <div class="container">
-        <div class="section-title">
-          <h2>Customization Guide</h2>
-        </div>
-    
-        <div class="customization-content">
-    
-          <h3>1. Customizing the Color Scheme</h3>
-          <p>The color scheme of the Dream Events template can be adjusted to match your event planning business's branding. Here's how to modify it in a React project:</p>
-          <ul>
-            <li>Open the <code>stylesheets/styles.scss</code> file.</li>
-            <li>Search for the CSS variables like <code>--primary-color</code>, <code>--secondary-color</code>, and others in the SCSS file.</li>
-            <li>Update these variables with your desired color values. For example, change:</li>
-            <pre><code>:root { --primary-color: #3498db; }</code></pre>
-            <li>Once updated, the changes will be reflected on the frontend immediately after saving the file.</li>
-          </ul>
-    
-          <h3>2. Connecting to MongoDB Using Compass</h3>
-          <p>To connect to MongoDB and manage your database using MongoDB Compass, follow these steps:</p>
-          <ul>
-            <li>Install MongoDB Compass from the official MongoDB website: <a href="https://www.mongodb.com/try/download/compass" target="_blank">MongoDB Compass Download</a>.</li>
-            <li>Once installed, open MongoDB Compass and click on the <strong>New Connection</strong> button.</li>
-            <li>Enter your MongoDB connection string. This can be obtained from your MongoDB Atlas account or your local MongoDB setup.</li>
-            <li>Click on the <strong>Connect</strong> button to establish a connection with your MongoDB instance.</li>
-            <li>In the "Database" section of MongoDB Compass, you will see all your collections and documents. You can now manage your data easily using the Compass interface.</li>
-            <li>For more detailed steps, refer to the <a href="https://docs.mongodb.com/compass/current/" target="_blank">MongoDB Compass Documentation</a>.</li>
-          </ul>
-    
-          <h3>3. Integrating Stripe for Payments</h3>
-          <p>To integrate Stripe for payments in your Dream Events dashboard, follow these steps:</p>
-          <ul>
-            <li>Create a Stripe account by visiting <a href="https://stripe.com" target="_blank">Stripe's official website</a>.</li>
-            <li>Once your account is set up, you can obtain your <strong>API keys</strong> (publishable key and secret key) from the Stripe Dashboard under the API section.</li>
-            <li>In your Dream Events React project, install the Stripe package using npm:</li>
-            <pre><code>npm install stripe</code></pre>
-            <li>Next, create a new API route in your backend server to handle the payment processing. If you're using Express, create a route like:</li>
-            <pre><code>
+ <!-- ======= Customization Guide ======= -->
+<section id="customization-guide">
+  <div class="container">
+    <div class="section-title">
+      <h2>Customization Guide</h2>
+    </div>
+
+    <div class="customization-content">
+
+      <h3>1. Customizing the Color Scheme</h3>
+      <p>The color scheme of the Dream Events template can be adjusted to match your event planning business's branding. Here's how to modify it in a React project:</p>
+      <ul>
+        <li>Open the <code>stylesheets/styles.scss</code> file.</li>
+        <li>Search for the CSS variables like <code>--primary-color</code>, <code>--secondary-color</code>, and others in the SCSS file.</li>
+        <li>Update these variables with your desired color values. For example, change:</li>
+        <pre><code>:root { --primary-color: #3498db; }</code></pre>
+        <li>Once updated, the changes will be reflected on the frontend immediately after saving the file.</li>
+      </ul>
+
+      <h3>2. Connecting to MongoDB Using Compass</h3>
+      <p>To connect to MongoDB and manage your database using MongoDB Compass, follow these steps:</p>
+      <ul>
+        <li>Install MongoDB Compass from the official MongoDB website: <a href="https://www.mongodb.com/try/download/compass" target="_blank">MongoDB Compass Download</a>.</li>
+        <li>Once installed, open MongoDB Compass and click on the <strong>New Connection</strong> button.</li>
+        <li>Enter your MongoDB connection string. This can be obtained from your MongoDB Atlas account or your local MongoDB setup.</li>
+        <li>Click on the <strong>Connect</strong> button to establish a connection with your MongoDB instance.</li>
+        <li>In the "Database" section of MongoDB Compass, you will see all your collections and documents. You can now manage your data easily using the Compass interface.</li>
+        <li>For more detailed steps, refer to the <a href="https://docs.mongodb.com/compass/current/" target="_blank">MongoDB Compass Documentation</a>.</li>
+      </ul>
+
+      <h3>3. Integrating Stripe for Payments</h3>
+      <p>To integrate Stripe for payments in your Dream Events dashboard, follow these steps:</p>
+      <ul>
+        <li>Create a Stripe account by visiting <a href="https://stripe.com" target="_blank">Stripe's official website</a>.</li>
+        <li>Once your account is set up, you can obtain your <strong>API keys</strong> (publishable key and secret key) from the Stripe Dashboard under the API section.</li>
+        <li>In your Dream Events React project, install the Stripe package and Stripe React libraries using npm:</li>
+        <pre><code>npm install @stripe/stripe-js @stripe/react-stripe-js</code></pre>
+        <li>In the backend (assuming you're using Express.js), create an API route to handle payment processing:</li>
+        <pre><code>
     import Stripe from 'stripe';
     const stripe = new Stripe('your-secret-key'); // Use your Stripe Secret Key here
     
@@ -938,17 +939,19 @@ PORT=5000
         res.status(500).json({ error: err.message });
       }
     });
-            </code></pre>
-            <li>On the frontend, you can use the Stripe.js library to handle the payment process. Add the Stripe.js script to your <code>public/index.html</code> file:</li>
-            <pre><code>
-    <script src="https://js.stripe.com/v3/"></script>
-            </code></pre>
-            <li>Then, in your React component, you can use the Stripe library to handle payments:</li>
-            <pre><code>
+        </code></pre>
+        <li>On the frontend, use the Stripe React libraries to handle the payment process. Create a <code>PaymentComponent.js</code> and integrate Stripe as follows:</li>
+        <pre><code>
     import { useEffect, useState } from 'react';
+    import { loadStripe } from '@stripe/stripe-js';
+    import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+    
+    const stripePromise = loadStripe('your-publishable-key');
     
     const PaymentComponent = () => {
       const [clientSecret, setClientSecret] = useState(null);
+      const stripe = useStripe();
+      const elements = useElements();
     
       useEffect(() => {
         // Create a PaymentIntent when the component mounts
@@ -957,77 +960,73 @@ PORT=5000
           .then((data) => setClientSecret(data.clientSecret));
       }, []);
     
-      const handlePayment = () => {
-        const stripe = window.Stripe('your-publishable-key');
-        const elements = stripe.elements();
+      const handlePayment = async () => {
+        const cardElement = elements.getElement(CardElement);
     
-        const paymentRequest = stripe.paymentRequest({
-          amount: 5000,
-          currency: 'usd',
-          clientSecret,
+        const { error, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
+          payment_method: {
+            card: cardElement,
+          },
         });
     
-        paymentRequest
-          .confirmPayment({
-            payment_method: 'card',
-          })
-          .then((result) => {
-            if (result.error) {
-              console.error(result.error.message);
-            } else {
-              console.log('Payment successful!');
-            }
-          });
+        if (error) {
+          console.error(error.message);
+        } else {
+          console.log('Payment successful!', paymentIntent);
+        }
       };
     
       return (
         <div>
+          <CardElement />
           <button onClick={handlePayment}>Pay Now</button>
         </div>
       );
     };
     
-    export default PaymentComponent;
-            </code></pre>
-            <li>For more details on integrating Stripe with your app, refer to the <a href="https://stripe.com/docs" target="_blank">Stripe Documentation</a>.</li>
-          </ul>
+    const StripeWrapper = () => (
+      <Elements stripe={stripePromise}>
+        <PaymentComponent />
+      </Elements>
+    );
     
-          <h3>4. Customizing the Fonts and Typography Using Google Fonts</h3>
-          <p>To change the fonts across your Dream Events dashboard using Google Fonts, follow these steps:</p>
-          <ul>
-            <li>Go to the <a href="https://fonts.google.com/" target="_blank">Google Fonts website</a> and search for the font you want to use. For example, search for "Roboto" or any other font that fits your theme.</li>
-            <li>Once you've selected your font, you will see a section to get the link. Choose the font weights and styles you want, and copy the link provided. For example, to use "Roboto", you would get this link:</li>
-            <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"&gt;</code></pre>
-            <li>Now, open your React project and go to the <code>public/index.html</code> file. Paste the Google Fonts link you copied earlier inside the <code>&lt;head&gt;</code> tag:</li>
-            <pre><code>
-    <head>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    </head>
-            </code></pre>
-            <li>Next, go to your <code>src/index.css</code> or <code>src/App.css</code> file and set the font-family for the body to the new font:</li>
-            <pre><code>body { font-family: 'Roboto', sans-serif; }</code></pre>
-            <li>Once you save these changes, your Dream Events dashboard will now use the new Google Font across all pages.</li>
-            <li>For more information and to explore more fonts, refer to the <a href="https://fonts.google.com/" target="_blank">Google Fonts documentation</a>.</li>
-          </ul>
-    
-          <h3>5. Editing the Dashboard Homepage Layout in <code>main.js</code></h3>
-          <p>To customize the homepage layout and structure, you'll need to edit the <code>main.js</code> file inside the <code>src/layout/</code> folder. Follow these steps:</p>
-          <ul>
-            <li>Open the <code>src/layout/main.js</code> file in your project directory.</li>
-            <li>Inside this file, you will find the structure for the container, header, sidebar, and the content sections of the homepage.</li>
-            <li>The layout typically follows this structure:</li>
-            <li>Once you’ve made the changes, save the file. The new layout will be reflected on the homepage.</li>
-          </ul>
-    
-          <h3>6. Integrating LocationIQ for Geolocation</h3>
-          <p>To integrate LocationIQ for geolocation services in your project, follow these steps:</p>
-          <ul>
-            <li>Go to <a href="https://locationiq.com/" target="_blank">LocationIQ</a> and create an account.</li>
-            <li>Once logged in, go to your dashboard and get your <strong>API Key</strong> for accessing LocationIQ services.</li>
-            <li>In your React project, install the <strong>axios</strong> package to make API requests:</li>
-            <pre><code>npm install axios</code></pre>
-            <li>Next, create a geolocation function in your app. For example, create a new file in the <code>utils</code> folder called <code>getLocation.js</code>:</li>
-            <pre><code>
+    export default StripeWrapper;
+        </code></pre>
+        <li>For more details on integrating Stripe with your app, refer to the <a href="https://stripe.com/docs" target="_blank">Stripe Documentation</a>.</li>
+      </ul>
+
+      <h3>4. Customizing the Fonts and Typography Using Google Fonts</h3>
+      <p>To change the fonts across your Dream Events dashboard using Google Fonts, follow these steps:</p>
+      <ul>
+        <li>Go to the <a href="https://fonts.google.com/" target="_blank">Google Fonts website</a> and search for the font you want to use. For example, search for "Roboto" or any other font that fits your theme.</li>
+        <li>Once you've selected your font, you will see a section to get the link. Choose the font weights and styles you want, and copy the link provided. For example, to use "Roboto", you would get this link:</li>
+        <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"&gt;</code></pre>
+        <li>Now, open your React project and go to the <code>public/index.html</code> file. Paste the Google Fonts link you copied earlier inside the <code>&lt;head&gt;</code> tag:</li>
+  
+        <li>Next, go to your <code>src/index.css</code> or <code>src/App.css</code> file and set the font-family for the body to the new font:</li>
+        <pre><code>body { font-family: 'Roboto', sans-serif; }</code></pre>
+        <li>Once you save these changes, your Dream Events dashboard will now use the new Google Font across all pages.</li>
+        <li>For more information and to explore more fonts, refer to the <a href="https://fonts.google.com/" target="_blank">Google Fonts documentation</a>.</li>
+      </ul>
+
+      <h3>5. Editing the Dashboard Homepage Layout in <code>main.js</code></h3>
+      <p>To customize the homepage layout and structure, you'll need to edit the <code>main.js</code> file inside the <code>src/layout/</code> folder. Follow these steps:</p>
+      <ul>
+        <li>Open the <code>src/layout/main.js</code> file in your project directory.</li>
+        <li>Inside this file, you will find the structure for the container, header, sidebar, and the content sections of the homepage.</li>
+        <li>Make changes as required, such as rearranging components or modifying the layout.</li>
+        <li>Once you’ve made the changes, save the file. The new layout will be reflected on the homepage.</li>
+      </ul>
+
+      <h3>6. Integrating LocationIQ for Geolocation</h3>
+      <p>To integrate LocationIQ for geolocation services in your project, follow these steps:</p>
+      <ul>
+        <li>Go to <a href="https://locationiq.com/" target="_blank">LocationIQ</a> and create an account.</li>
+        <li>Once logged in, go to your dashboard and get your <strong>API Key</strong> for accessing LocationIQ services.</li>
+        <li>In your React project, install the <strong>axios</strong> package to make API requests:</li>
+        <pre><code>npm install axios</code></pre>
+        <li>Next, create a geolocation function in your app. For example, create a new file in the <code>utils</code> folder called <code>getLocation.js</code>:</li>
+        <pre><code>
     import axios from 'axios';
     
     const getLocation = async (address) => {
@@ -1036,9 +1035,9 @@ PORT=5000
     };
     
     export default getLocation;
-            </code></pre>
-            <li>To use this function, import and call it from your components where you need geolocation functionality:</li>
-            <pre><code>
+        </code></pre>
+        <li>To use this function, import and call it from your components where you need geolocation functionality:</li>
+        <pre><code>
     import getLocation from '../utils/getLocation';
     
     const LocationComponent = () => {
@@ -1055,13 +1054,14 @@ PORT=5000
     
       return <div>{location ? <pre>{JSON.stringify(location, null, 2)}</pre> : 'Loading location data...'}</div>;
     };
-            </code></pre>
-            <li>For more details on using LocationIQ, refer to the <a href="https://locationiq.com/docs" target="_blank">LocationIQ API Documentation</a>.</li>
-          </ul>
-    
-        </div>
-      </div>
-    </section>
+        </code></pre>
+        <li>For more details on using LocationIQ, refer to the <a href="https://locationiq.com/docs" target="_blank">LocationIQ API Documentation</a>.</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
     
     
     
