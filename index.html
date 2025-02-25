@@ -176,37 +176,38 @@
               </div>
             </div>
       
-            <!-- Key Features -->
-            <div class="key-features">
-              <h3>Key Features:</h3>
-              
-              <!-- Admin Dashboard Features -->
-              <h5>Admin Dashboard Features:</h5>
-              <ul class="feature-list">
-                <li><strong>Dashboard Management:</strong> Manage events, users, transactions, and bookings in one central dashboard.</li>
-                <li><strong>Role Management:</strong> Assign roles to your team (admin, event manager, etc.) with customizable permissions.</li>
-                <li><strong>User Management:</strong> Add, remove, or edit user profiles, track activity, and manage permissions.</li>
-                <li><strong>Event Management:</strong> Create, modify, and track events with ease. Set up schedules, locations, and other event details.</li>
-                <li><strong>Bookings & Transactions:</strong> View and manage event bookings, handle payments, and track transaction histories.</li>
-                <li><strong>Customer Support:</strong> Provide support to users by managing customer inquiries and resolving issues efficiently.</li>
-                <li><strong>Analytics & Reporting:</strong> Track performance, event statistics, sales, and user activity with real-time analytics.</li>
-                <li><strong>Settings:</strong> Customize platform settings according to your business needs, from branding to event parameters.</li>
-              </ul>
-            
-              <!-- Mobile App Features -->
-              <h5>Mobile App Features:</h5>
-              <ul class="feature-list">
-                <li><strong>Upcoming Events:</strong> View a list of upcoming events in the app, browse, and plan which ones to attend.</li>
-                <li><strong>Popular Events:</strong> Discover trending events based on popularity, ensuring users stay updated on hot events.</li>
-                <li><strong>Event Booking:</strong> Easily book tickets for events, track bookings, and receive notifications of upcoming events.</li>
-                <li><strong>Event Details:</strong> View detailed information such as date, time, location, and ticket pricing for each event.</li>
-                <li><strong>Notifications:</strong> Receive timely updates on event changes, reminders, and new event announcements.</li>
-                <li><strong>Personalized Recommendations:</strong> Get event suggestions based on user preferences and past bookings.</li>
-                <li><strong>User Profile:</strong> Manage user profile details, view past bookings, and track upcoming registrations.</li>
-                <li><strong>Social Sharing:</strong> Share event information on social media platforms and invite others to join.</li>
-              </ul>
-            </div>
-            
+ <!-- Key Features -->
+<div class="key-features">
+  <h3>Key Features:</h3>
+
+  <!-- Admin Dashboard Features -->
+  <h5>Admin Dashboard Features:</h5>
+  <ul class="feature-list">
+    <li><strong>Centralized Dashboard:</strong> Access and manage events, users, transactions, and bookings all in one place.</li>
+    <li><strong>Real-Time Analytics:</strong> Track performance with live data on event stats, sales, and user activity.</li>
+    <li><strong>Event Management:</strong> Create, edit, and organize events easily, including schedules, locations, and details.</li>
+    <li><strong>Bookings & Payments:</strong> Monitor and manage bookings, process payments, and review transaction history.</li>
+    <li><strong>Settings & Customization:</strong> Tailor platform settings such as branding, event preferences, and parameters to fit your needs.</li>
+    <li><strong>Notification System:</strong> Stay updated with notifications for important actions like bookings, transactions, and user activities.</li>
+    <li><strong>Language Options:</strong> Easily change the app's language for a localized experience.</li>
+  </ul>
+
+  <!-- Mobile App Features -->
+  <h5>Mobile App Features:</h5>
+  <ul class="feature-list">
+    <li><strong>Discover Upcoming Events:</strong> Browse a list of upcoming events to stay ahead of what’s happening.</li>
+    <li><strong>Trending Events:</strong> See the most popular events and don’t miss out on the ones everyone is talking about.</li>
+    <li><strong>Easy Event Booking:</strong> Book tickets with ease, track your bookings, and receive event notifications.</li>
+    <li><strong>Detailed Event Info:</strong> View essential event details like date, time, location, and ticket pricing.</li>
+    <li><strong>Notifications & Reminders:</strong> Get timely reminders and updates on event changes or new events.</li>
+    <li><strong>Manage Profile:</strong> Update your profile, review past bookings, and track upcoming event registrations.</li>
+    <li><strong>Bookmark Events:</strong> Mark events as favorites to revisit or book later.</li>
+    <li><strong>Events on Map:</strong> Explore nearby events using the map view for easier navigation.</li>
+    <li><strong>Language Options:</strong> Change the app language for a more personalized experience.</li>
+  </ul>
+</div>
+
+
       
             <!-- Target Audience -->
             <div class="target-audience">
@@ -345,7 +346,7 @@
         </li>
         <li>Create a `.env` file in the root of your client directory with the following settings:</li>
         <pre><code>
-REACT_APP_GOOGLE_API_KEY="<YOUR_GOOGLE_API_KEY>"
+REACT_APP_GOOGLE_API_KEY="<YOUR_GOOGLE_API_KEY>
         </code></pre>
       </ol>
 
@@ -572,287 +573,124 @@ PORT=5000
 </section>
 
     
-    <!-- ======= API Integration Guide  ======= -->
-    <section id="api-integration-guide">
-      <div class="container">
-        <div class="section-title">
-          <h2>API Integration Guide</h2>
-        </div>
-    
-        <div class="api-integration-content">
-          <h3>1. Location API</h3>
-          <p>APIs to handle location-based services and details for events.</p>
-          <ul>
-            <li>
-              <strong>Allow Location Details</strong>: Enable location access and fetch details.<br>
-              <code>POST /location-details</code>
-            </li>
-          </ul>
-    
-          <h3>2. Bookmark API</h3>
-          <p>Endpoints for managing bookmarked events by users.</p>
-          <ul>
-            <li>
-              <strong>Create Bookmark</strong>: Bookmark an event.<br>
-              <code>POST /bookmarks</code>
-            </li>
-            <li>
-              <strong>Remove Bookmark</strong>: Remove a bookmarked event.<br>
-              <code>DELETE /bookmarks</code>
-            </li>
-            <li>
-              <strong>Get Bookmarked Event</strong>: Retrieve bookmarks by event ID.<br>
-              <code>GET /bookmarks</code>
-            </li>
-          </ul>
-    
-          <h3>3. Event Selection API</h3>
-          <p>Choose events based on user preferences or filters.</p>
-          <ul>
-            <li>
-              <strong>Choose Event</strong>: Select an event from the list.<br>
-              <code>POST /choose-event</code>
-            </li>
-          </ul>
-    
-          <h3>4. Dashboard API</h3>
-          <p>APIs for managing dashboard views and event analytics.</p>
-          <ul>
-            <li>
-              <strong>Get Dashboard</strong>: View dashboard metrics and analytics.<br>
-              <code>GET /dashboard</code>
-            </li>
-            <li>
-              <strong>Total Events</strong>: Retrieve total event count.<br>
-              <code>POST /total-events</code>
-            </li>
-            <li>
-              <strong>Event List</strong>: Retrieve list of events by ID.<br>
-              <code>POST /event-list</code>
-            </li>
-            <li>
-              <strong>Sales and Revenue</strong>: Retrieve sales and revenue analytics.<br>
-              <code>POST /sales-events</code>
-            </li>
-            <li>
-              <strong>Upcoming Events</strong>: View the list of upcoming events.<br>
-              <code>POST /upcoming-list</code>
-            </li>
-          </ul>
-    
-          <h3>5. Mobile API (Dashboard)</h3>
-          <p>APIs for mobile app integration with the dashboard.</p>
-          <ul>
-            <li>
-              <strong>Dashboard List</strong>: Retrieve the dashboard view for mobile.<br>
-              <code>GET /dashboard-list</code>
-            </li>
-          </ul>
-    
-          <h3>6. User Management API</h3>
-          <p>APIs for managing dashboard users and roles.</p>
-          <ul>
-            <li>
-              <strong>Create User</strong>: Create a new dashboard user.<br>
-              <code>POST /create-user</code>
-            </li>
-            <li>
-              <strong>Edit User</strong>: Edit an existing user.<br>
-              <code>PUT /create-user</code>
-            </li>
-            <li>
-              <strong>Delete User</strong>: Delete a user by ID.<br>
-              <code>DELETE /create-user/:id</code>
-            </li>
-            <li>
-              <strong>Get User by ID</strong>: Fetch user details by ID.<br>
-              <code>GET /create-user/:id</code>
-            </li>
-            <li>
-              <strong>Dashboard Login</strong>: User login for dashboard.<br>
-              <code>POST /dashboard-login</code>
-            </li>
-            <li>
-              <strong>User List</strong>: Retrieve a list of users.<br>
-              <code>POST /user-list</code>
-            </li>
-            <li>
-              <strong>Forgot Password</strong>: Handle password reset initiation.<br>
-              <code>POST /forgot-password</code>
-            </li>
-            <li>
-              <strong>Verify OTP</strong>: Verify OTP for password reset.<br>
-              <code>POST /verify-otp</code>
-            </li>
-            <li>
-              <strong>Reset Password</strong>: Reset password using OTP.<br>
-              <code>POST /reset-password</code>
-            </li>
-            <li>
-              <strong>Refresh Token</strong>: Refresh the access token.<br>
-              <code>POST /refresh-token</code>
-            </li>
-          </ul>
-    
-          <h3>7. Favorite Event API</h3>
-          <p>APIs for managing favorite events and event categories.</p>
-          <ul>
-            <li>
-              <strong>Event Category</strong>: Retrieve event categories.<br>
-              <code>GET /category</code>
-            </li>
-            <li>
-              <strong>Favorite Event</strong>: Mark an event as favorite.<br>
-              <code>POST /favorite-event</code>
-            </li>
-          </ul>
-    
-          <h3>8. Features API</h3>
-          <p>Manage feature availability based on roles and permissions.</p>
-          <ul>
-            <li>
-              <strong>Get Features</strong>: Retrieve available features.<br>
-              <code>GET /feature</code>
-            </li>
-          </ul>
-    
-          <h3>9. Notifications API</h3>
-          <p>APIs to manage and fetch notifications for users and admins.</p>
-          <ul>
-            <li>
-              <strong>Get Notifications</strong>: Retrieve notifications.<br>
-              <code>GET /notifications</code>
-            </li>
-            <li>
-              <strong>Mark Notification as Read</strong>: Mark a notification as read by ID.<br>
-              <code>PUT /notifications/:notificationId</code>
-            </li>
-          </ul>
-    
-          <h3>10. Role and Permission API</h3>
-          <p>APIs for role-based access control (RBAC) and permission management.</p>
-          <ul>
-            <li>
-              <strong>Get Roles</strong>: Retrieve a list of roles.<br>
-              <code>GET /role</code>
-            </li>
-            <li>
-              <strong>Create Role</strong>: Create a new role.<br>
-              <code>POST /role</code>
-            </li>
-            <li>
-              <strong>Role Permission</strong>: Assign permissions to roles.<br>
-              <code>POST /role-permission</code>
-            </li>
-            <li>
-              <strong>Edit Role Permission</strong>: Edit permissions for a role.<br>
-              <code>PUT /role-permission/:id</code>
-            </li>
-            <li>
-              <strong>Delete Role Permission</strong>: Delete permissions for a role.<br>
-              <code>DELETE /role-permission/:id</code>
-            </li>
-          </ul>
-    
-          <h3>11. Seat Booking API</h3>
-          <p>APIs for managing event seat bookings, cancellations, and transactions.</p>
-          <ul>
-            <li>
-              <strong>Booking List</strong>: Retrieve seat booking details.<br>
-              <code>POST /booking-list</code>
-            </li>
-            <li>
-              <strong>Event Status</strong>: Get the status of an event.<br>
-              <code>GET /event-status</code>
-            </li>
-            <li>
-              <strong>Customer List</strong>: Get a list of customers for an event.<br>
-              <code>POST /customer-list</code>
-            </li>
-            <li>
-              <strong>Transaction List</strong>: Get transaction history for an event.<br>
-              <code>POST /transaction-list</code>
-            </li>
-            <li>
-              <strong>Create Seat Booking</strong>: Book a seat for an event.<br>
-              <code>POST /seat-booking</code>
-            </li>
-            <li>
-              <strong>Cancel and Refund Booking</strong>: Cancel a seat booking and process refund.<br>
-              <code>POST /cancel-refund</code>
-            </li>
-            <li>
-              <strong>Payment Success</strong>: Confirm payment success for a booking.<br>
-              <code>GET /payment-success</code>
-            </li>
-            <li>
-              <strong>Ticket Booking Status</strong>: Get the current status of a booked ticket.<br>
-              <code>POST /ticket-booking-status</code>
-            </li>
-          </ul>
-    
-          <h3>12. Upcoming Event API</h3>
-          <p>APIs for managing upcoming events, including creating, editing, and listing.</p>
-          <ul>
-            <li>
-              <strong>Create Upcoming Event</strong>: Create a new event.<br>
-              <code>POST /upcoming-events</code>
-            </li>
-            <li>
-              <strong>Edit Upcoming Event</strong>: Edit an existing event by ID.<br>
-              <code>PUT /upcoming-events/:id</code>
-            </li>
-            <li>
-              <strong>Get Event by ID</strong>: Retrieve event details by ID.<br>
-              <code>GET /upcoming-events/:id</code>
-            </li>
-            <li>
-              <strong>Delete Upcoming Event</strong>: Delete an event by ID.<br>
-              <code>DELETE /upcoming-events/:id</code>
-            </li>
-          </ul>
-    
-          <h3>13. Mobile Event API</h3>
-          <p>APIs for mobile-specific event interactions and listings.</p>
-          <ul>
-            <li>
-              <strong>Get Event by ID</strong>: Retrieve event details by ID.<br>
-              <code>GET /events/:id</code>
-            </li>
-            <li>
-              <strong>View Event List</strong>: View the list of events for mobile.<br>
-              <code>GET /event-list-view</code>
-            </li>
-            <li>
-              <strong>Nearby Events</strong>: Get events happening nearby.<br>
-              <code>POST /nearby-events</code>
-            </li>
-          </ul>
-    
-          <h3>14. User API</h3>
-          <p>APIs for user registration, login, and profile management.</p>
-          <ul>
-            <li>
-              <strong>Register User</strong>: Create a new user account.<br>
-              <code>POST /register</code>
-            </li>
-            <li>
-              <strong>User Login</strong>: Log in to the application.<br>
-              <code>POST /login</code>
-            </li>
-            <li>
-              <strong>Edit User</strong>: Edit user details by ID.<br>
-              <code>PUT /user/:id</code>
-            </li>
-            <li>
-              <strong>Show User</strong>: Show user details by ID.<br>
-              <code>GET /user/:id</code>
-            </li>
-          </ul>
-    
-        </div>
-      </div>
-    </section>
+ <!-- ======= API Integration Guide  ======= -->
+<section id="api-integration-guide">
+  <div class="container">
+    <div class="section-title">
+      <h2>API Integration Guide</h2>
+    </div>
+
+    <div class="api-integration-content">
+      <h3>1. Location API</h3>
+      <p>APIs to handle location-based services for events.</p>
+      <ul>
+        <li>
+          <strong>Allow Location Details</strong>: Enable location access and fetch details.<br>
+          <code>POST /location</code>
+        </li>
+      </ul>
+
+      <h3>2. Bookmark API</h3>
+      <p>Endpoints for managing bookmarks.</p>
+      <ul>
+        <li><strong>Create Bookmark</strong>: Bookmark an event.<br><code>POST /bookmarks</code></li>
+        <li><strong>Remove Bookmark</strong>: Remove a bookmarked event.<br><code>DELETE /bookmarks</code></li>
+        <li><strong>Get Bookmark</strong>: Retrieve bookmarked events.<br><code>GET /bookmarks</code></li>
+      </ul>
+
+      <h3>3. Event API</h3>
+      <p>APIs for managing events.</p>
+      <ul>
+        <li><strong>Create Event</strong>: Create a new event.<br><code>POST /upcoming-events</code></li>
+        <li><strong>Edit Event</strong>: Edit an existing event by ID.<br><code>PUT /upcoming-events/:id</code></li>
+        <li><strong>Get Event by ID</strong>: Retrieve event details by ID.<br><code>GET /upcoming-events/:id</code></li>
+        <li><strong>Delete Event</strong>: Delete an event by ID.<br><code>DELETE /upcoming-events/:id</code></li>
+        <li><strong>Mobile Event List</strong>: View the list of events for mobile.<br><code>GET /event-list-view</code></li>
+        <li><strong>Nearby Events</strong>: Get events happening nearby.<br><code>POST /nearby-events</code></li>
+      </ul>
+
+      <h3>4. Booking API</h3>
+      <p>APIs for seat bookings and transactions.</p>
+      <ul>
+        <li><strong>Booking List</strong>: Retrieve booking details.<br><code>POST /booking-list</code></li>
+        <li><strong>Event Status</strong>: Get the status of an event.<br><code>POST /event-status</code></li>
+        <li><strong>Customer List</strong>: Get a list of customers for an event.<br><code>POST /customer-list</code></li>
+        <li><strong>Transaction List</strong>: Get transaction history for an event.<br><code>POST /transaction-list</code></li>
+        <li><strong>Create Seat Booking</strong>: Book a seat for an event.<br><code>POST /seat-booking</code></li>
+        <li><strong>Cancel Booking</strong>: Cancel a seat booking and process refund.<br><code>POST /cancel-refund</code></li>
+        <li><strong>Payment Success</strong>: Confirm payment success.<br><code>GET /payment-success</code></li>
+        <li><strong>Ticket Booking Status</strong>: Get the status of a booked ticket.<br><code>POST /ticket-booking-status</code></li>
+      </ul>
+
+      <h3>5. Category API</h3>
+      <p>APIs for managing event categories.</p>
+      <ul>
+        <li><strong>Get Event Categories</strong>: Retrieve event categories.<br><code>GET /category</code></li>
+        <li><strong>Add Category</strong>: Add a new event category.<br><code>POST /category</code></li>
+      </ul>
+
+      <h3>6. Dashboard API</h3>
+      <p>APIs for managing dashboard analytics.</p>
+      <ul>
+        <li><strong>Trending Events</strong>: Get trending events.<br><code>GET /trending-events</code></li>
+        <li><strong>Recent Events</strong>: View recent events.<br><code>GET /recent-events</code></li>
+        <li><strong>Latest Sales</strong>: View latest sales.<br><code>GET /latest-sales</code></li>
+        <li><strong>Dashboard Stats</strong>: View dashboard statistics.<br><code>GET /stats</code></li>
+        <li><strong>Total Events</strong>: Get total event count.<br><code>POST /total-events</code></li>
+        <li><strong>Event List</strong>: Get a list of events.<br><code>POST /event-list</code></li>
+        <li><strong>Revenue by Category</strong>: Get revenue analytics by category.<br><code>POST /category-revenue</code></li>
+        <li><strong>Sales Revenue</strong>: Retrieve sales and revenue analytics.<br><code>POST /sales-revenue</code></li>
+        <li><strong>Upcoming Events</strong>: View a list of upcoming events.<br><code>POST /upcoming-list</code></li>
+        <li><strong>Mobile Popular Events</strong>: Get popular events for mobile.<br><code>GET /popular-event</code></li>
+      </ul>
+
+      <h3>7. User Management API</h3>
+      <p>APIs for managing users and roles in the dashboard.</p>
+      <ul>
+        <li><strong>Create User</strong>: Add a new dashboard user.<br><code>POST /create-user</code></li>
+        <li><strong>Edit User</strong>: Edit user details.<br><code>PUT /create-user/:id</code></li>
+        <li><strong>Delete User</strong>: Delete a user by ID.<br><code>DELETE /create-user/:id</code></li>
+        <li><strong>Get User</strong>: Get user details by ID.<br><code>GET /create-user/:id</code></li>
+        <li><strong>User List</strong>: Retrieve a list of users.<br><code>POST /user-list</code></li>
+        <li><strong>Dashboard Login</strong>: Login to the dashboard.<br><code>POST /dashboard-login</code></li>
+        <li><strong>Forgot Password</strong>: Handle password reset.<br><code>POST /forgot-password</code></li>
+        <li><strong>Verify OTP</strong>: Verify OTP for password reset.<br><code>POST /verify-otp</code></li>
+        <li><strong>Reset Password</strong>: Reset password using OTP.<br><code>POST /reset-password</code></li>
+        <li><strong>Refresh Token</strong>: Refresh the access token.<br><code>POST /refresh-token</code></li>
+        <li><strong>Logout</strong>: Logout user from the system.<br><code>GET /logout</code></li>
+      </ul>
+
+      <h3>8. Role & Permission API</h3>
+      <p>APIs for managing roles and permissions.</p>
+      <ul>
+        <li><strong>Get Roles</strong>: Retrieve a list of roles.<br><code>GET /role</code></li>
+        <li><strong>Create Role</strong>: Create a new role.<br><code>POST /role</code></li>
+        <li><strong>Edit Role</strong>: Edit an existing role.<br><code>PUT /role/:id</code></li>
+        <li><strong>Delete Role</strong>: Delete a role by ID.<br><code>DELETE /role/:id</code></li>
+        <li><strong>Get Role by ID</strong>: Retrieve role details by ID.<br><code>GET /role/:id</code></li>
+        <li><strong>Role Permission List</strong>: Retrieve permissions for roles.<br><code>GET /role-permission</code></li>
+        <li><strong>Edit Role Permission</strong>: Modify permissions for a role.<br><code>POST /role-permission</code></li>
+        <li><strong>Delete Role Permission</strong>: Delete permissions for a role.<br><code>DELETE /role-permission/:id</code></li>
+        <li><strong>Role Permission by ID</strong>: Retrieve role permission by ID.<br><code>GET /role-permission/:id</code></li>
+      </ul>
+
+      <h3>9. Features API</h3>
+      <p>Manage available features based on roles.</p>
+      <ul>
+        <li><strong>Get Features</strong>: Retrieve available features.<br><code>GET /feature</code></li>
+      </ul>
+
+      <h3>10. Notification API</h3>
+      <p>APIs to manage notifications.</p>
+      <ul>
+        <li><strong>Get Notifications</strong>: Retrieve notifications.<br><code>GET /notifications</code></li>
+        <li><strong>Mark Notification as Read</strong>: Mark a notification as read.<br><code>PUT /notifications/:notificationId</code></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ======= End API Integration Guide ======= -->
+
     
     
     
